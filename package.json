@@ -8,9 +8,14 @@
   },
   "author": "Lucas Vasconcelos",
   "license": "Apache-2.0",
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/lucaslg26/musivk"
+  },
   "dependencies": {
     "express": "^4.13.2",
     "mkpath": "^0.1.0",
+    "progress": "^1.1.8",
     "request-progress": "^0.3.1",
     "ws": "^0.7.2"
   }
