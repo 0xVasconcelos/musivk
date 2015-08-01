@@ -1,6 +1,10 @@
 # musivk
 A tool to download music from VK
 
+## Status
+
+[![NPM](https://nodei.co/npm/musivk.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/musivk/)[![NPM](https://nodei.co/npm-dl/musivk.png?months=1&height=3)](https://nodei.co/npm-dl/musivk/)
+
 
 ## How to install
 
