@@ -15,6 +15,7 @@ A tool to download music from VK
 ## How to install
 
   First you need get one access-token from VK, create an app, authorize you account with "audio" and "offline" access rights and put in "accessToken" inside app.js
+  
   Learn more here: https://vk.com/dev/authentication
   
  
