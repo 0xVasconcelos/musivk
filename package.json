@@ -6,17 +6,29 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Lucas Vasconcelos",
+  "author": {
+    "name": "Lucas Vasconcelos"
+  },
   "license": "Apache-2.0",
   "repository": {
-  "type": "git",
-  "url": "https://github.com/lucaslg26/musivk"
+    "type": "git",
+    "url": "git+https://github.com/lucaslg26/musivk.git"
   },
   "dependencies": {
     "express": "^4.13.2",
     "mkpath": "^0.1.0",
-    "progress": "^1.1.8",
+    "request": "^2.60.0",
     "request-progress": "^0.3.1",
     "ws": "^0.7.2"
-  }
+  },
+  "readme": "# musivk\r\nA tool to download music from VK\r\n\r\n## Status\r\n\r\n[![NPM](https://nodei.co/npm/musivk.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/musivk/)\r\n\r\n[![NPM](https://nodei.co/npm-dl/musivk.png?months=1&height=3)](https://nodei.co/npm-dl/musivk/)\r\n\r\n[![NPM](https://img.shields.io/npm/l/musivk.svg?style=flat-square)](https://github.com/lucaslg26/musivk) [![NPM](https://img.shields.io/node/v/gh-badges.svg?style=flat-square)](https://github.com/lucaslg26/musivk) [![NPM](https://img.shields.io/github/release/qubyte/rubidium.svg?style=flat-square)](https://github.com/lucaslg26/musivk)\r\n\r\n\r\n\r\n\r\n## How to install\r\n\r\n  First you need get one access-token from VK, create an app, authorize you account with \"audio\" and \"offline\" access rights and put in \"accessToken\" inside app.js\r\n  \r\n  Learn more here: https://vk.com/dev/authentication\r\n  \r\n \r\nRun this inside folder:\r\n \r\n           \r\n            npm install musivk\r\n            \r\n  \r\n Wait install everything and run this(on Linux):\r\n \r\n           \r\n          nodejs app.js\r\n          \r\n  \r\n  Windows:\r\n \r\n        \r\n          node app.js\r\n          \r\n          \r\n          \r\n  Open http://127.0.0.1:3000 on your browser, that's it!\r\n",
+  "readmeFilename": "README.md",
+  "gitHead": "451e152785a9c847abef9c716a264e9311ba4e78",
+  "bugs": {
+    "url": "https://github.com/lucaslg26/musivk/issues"
+  },
+  "homepage": "https://github.com/lucaslg26/musivk#readme",
+  "_id": "musivk@1.0.1",
+  "_shasum": "a886efc7bb675f47d9107a53b5c701a951604180",
+  "_from": "musivk@*"
 }
