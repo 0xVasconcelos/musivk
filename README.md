@@ -22,7 +22,7 @@ A tool to download music from VK
 Run this inside folder:
  
            
-            npm install musivk
+          npm install musivk
             
   
  Wait install everything and run this(on Linux):
