@@ -34,7 +34,10 @@ ws.onmessage = function (data) {
         case 'downloadsuccess':
             console.log(data);
             document.getElementById('done').innerHTML = "100% done... Redirecting...";
-            window.location.href = 'http://' + window.location.host + data.url;
+            window.open(
+                'http://' + window.location.host + data.url,
+                '_blank' // <- This is what makes it open in a new window.
+            );
             break;
     }
 }
@@ -49,10 +52,10 @@ function searchSongs(name) {
 }
 
 $('#search').keypress(function (e) {
-        if (e.which == 13) {
-            $('#submit').trigger('click');
-        }
-    });
+    if (e.which == 13) {
+        $('#submit').trigger('click');
+    }
+});
 
 $('#submit').bind('click', function () {
     $("#input-area").css({
