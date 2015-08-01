@@ -101,7 +101,7 @@ wss.on('connection', function connection(ws) {
                             try {
                                 ws.send(JSON.stringify({
                                     type: 'downloadsuccess',
-                                    url: '/musics/' + downloadItem.id + '/' + downloadItem.artist + ' - ' + downloadItem.title + '.mp3'
+                                    url: '/musics/' + downloadItem.id + '/' + encodeURIComponent(downloadItem.artist) + ' - ' + encodeURIComponent(downloadItem.title) + '.mp3'
                                 }))
                             } catch (err) {
                                 console.log("[WS]Error: socket probably closed");
@@ -124,15 +124,15 @@ wss.on('connection', function connection(ws) {
 });
 
 
-app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/index.html');
+app.get('/',function(req, res){//get,put,post,delete
+      res.sendFile(__dirname + '/index.html');
 });
 app.use(express.static('public'));
 
 var server = app.listen(3000, function () {
-    var host = server.address().address;
-    var port = server.address().port;
-    console.log('Express server up in http://%s:%s', host, port);
+  var host = server.address().address;
+  var port = server.address().port;
+  console.log('Express server up in http://%s:%s', host, port);
 });
 
 
