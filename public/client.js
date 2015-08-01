@@ -48,6 +48,12 @@ function searchSongs(name) {
     }));
 }
 
+$('#search').keypress(function (e) {
+        if (e.which == 13) {
+            $('#submit').trigger('click');
+        }
+    });
+
 $('#submit').bind('click', function () {
     $("#input-area").css({
         "display": "none"
