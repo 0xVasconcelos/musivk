@@ -8,10 +8,10 @@ A tool to download music from VK
   Learn more here: https://vk.com/dev/authentication
   
  
- Download the repository and run this inside folder:
+Run this inside folder:
  
            
-            npm install 
+            npm install musivk
             
   
  Wait install everything and run this(on Linux):
