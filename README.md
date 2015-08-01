@@ -10,21 +10,21 @@ A tool to download music from VK
  
  Download the repository and run this inside folder
  
-          ```javascript 
+           
             npm install 
-            ```
+            
   
  ### Wait install everything and run this(on Linux)
  
-          ```javascript 
+           
           nodejs app.js
-          ```
+          
   
  ### Windows
  
-        ```javascript 
+        
           node app.js
-           ```
+          
           
           
   Open http://127.0.0.1:3000 on your browser, that's it!
