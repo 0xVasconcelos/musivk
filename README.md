@@ -7,7 +7,7 @@ A tool to download music from VK
 
 [![NPM](https://nodei.co/npm-dl/musivk.png?months=1&height=3)](https://nodei.co/npm-dl/musivk/)
 
-[![NPM](https://img.shields.io/npm/l/musivk.svg)](https://github.com/lucaslg26/musivk) [![NPM](https://img.shields.io/node/v/gh-badges.svg)](https://github.com/lucaslg26/musivk) [![NPM](https://img.shields.io/github/release/qubyte/rubidium.svg)](https://github.com/lucaslg26/musivk)
+[![NPM](https://img.shields.io/npm/l/musivk.svg?style=flat-square)](https://github.com/lucaslg26/musivk) [![NPM](https://img.shields.io/node/v/gh-badges.svg?style=flat-square)](https://github.com/lucaslg26/musivk) [![NPM](https://img.shields.io/github/release/qubyte/rubidium.svg?style=flat-square)](https://github.com/lucaslg26/musivk)
 
 
 
