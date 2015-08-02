@@ -16,13 +16,17 @@ A tool to download music from VK
 
   First you need get one access-token from VK, create an app, authorize you account with "audio" and "offline" access rights and put in "accessToken" inside app.js
   
+  You can get one from my app: http://music.cpux.me:666/newtoken
+  
   Learn more here: https://vk.com/dev/authentication
   
+  
+  
  
-Run this inside folder:
+Clone this repo and run this inside folder:
  
            
-          npm install musivk
+          npm install
             
   
  Wait install everything and run this(on Linux):
