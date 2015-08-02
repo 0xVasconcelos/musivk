@@ -23,10 +23,14 @@ wss.on('connection', function connection(ws) {
         console.log(data);
         switch (data.type) {
             case 'search':
-                ws.send(JSON.stringify({
-                    type: 'searching',
-                    value: data.value
-                }));
+                try {
+                    ws.send(JSON.stringify({
+                        type: 'searching',
+                        value: data.value
+                    }));
+                } catch (err) {
+                    console.log("[WS]Error: socket probably closed");
+                }
                 var songList = [];
                 var songNameEnc = encodeURIComponent(data.value);
                 request({
@@ -52,15 +56,20 @@ wss.on('connection', function connection(ws) {
                                 duration: body.response[i].duration
                             }
                         };
-                        ws.send(JSON.stringify({
-                            type: 'result',
-                            results: songList,
-                            value: data.value
-                        }));
-                        ws.send(JSON.stringify({
-                            type: 'searchdone',
-                            value: data.value
-                        }));
+                        try {
+                            ws.send(JSON.stringify({
+                                type: 'result',
+                                results: songList,
+                                value: data.value
+                            }));
+
+                            ws.send(JSON.stringify({
+                                type: 'searchdone',
+                                value: data.value
+                            }));
+                        } catch (err) {
+                            console.log("[WS]Error: socket probably closed")
+                        }
                     }
                 });
 
@@ -124,15 +133,15 @@ wss.on('connection', function connection(ws) {
 });
 
 
-app.get('/',function(req, res){//get,put,post,delete
-      res.sendFile(__dirname + '/index.html');
+app.get('/', function (req, res) { //get,put,post,delete
+    res.sendFile(__dirname + '/index.html');
 });
 app.use(express.static('public'));
 
 var server = app.listen(3000, function () {
-  var host = server.address().address;
-  var port = server.address().port;
-  console.log('Express server up in http://%s:%s', host, port);
+    var host = server.address().address;
+    var port = server.address().port;
+    console.log('Express server up in http://%s:%s', host, port);
 });
 
 
