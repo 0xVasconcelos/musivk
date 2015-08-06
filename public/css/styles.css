@@ -82,3 +82,13 @@ td {
 .demo-footer .mdl-mini-footer--link-list a {
     font-size: 12px;
 }
+.nice-button {
+    background: orange;
+    font-size: 22px;
+    height: 2.5em;
+    transition: 0.5s ease all;
+    -webkit-transition: 0.5s ease all;
+}
+.nice-button:hover {
+    background-color: #FF5722;
+}
