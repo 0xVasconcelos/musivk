@@ -1,5 +1,4 @@
 var request = require("request");
-var https = require('https');
 var fs = require('fs');
 var progress = require('request-progress');
 var mkpath = require('mkpath');
