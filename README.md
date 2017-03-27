@@ -1,5 +1,10 @@
-# musivk
+# musivk (DEPRECATED)
+
+DEPRECATED PROJECT.
+
 A tool to download music from VK
+
+
 
 ## Status
 
